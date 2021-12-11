@@ -3,19 +3,32 @@ defmodule AdventOfCode.Day10Test do
 
   import AdventOfCode.Day10
 
+  @input """
+  [({(<(())[]>[[{[]{<()<>>
+  [(()[<>])]({[<{<<[]>>(
+  {([(<{}[<>[]}>{[]{[(<()>
+  (((({<>}<{<{<>}{[]{[]{}
+  [[<[([]))<([[{}[[()]]]
+  [{[{({}]{}}([{[{{{}}([]
+  {<[[]]>}<{[{[{[]{()[[[]
+  [<(<(<(<{}))><([]([]()
+  <{([([[(<>()){}]>(<<{{
+  <{([{{}}[<[[[<>{}]]]>[]]
+  """
+
   @tag :skip
   test "part1" do
-    input = nil
+    input = @input
     result = part1(input)
 
-    assert result
+    assert result == 26397
   end
 
   @tag :skip
   test "part2" do
-    input = nil
+    input = @input
     result = part2(input)
 
-    assert result
+    assert result == 288_957
   end
 end
