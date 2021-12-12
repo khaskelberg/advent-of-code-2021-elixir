@@ -23,7 +23,7 @@ defmodule AdventOfCode.Day11 do
           {positions, index + 1}
       end)
 
-    {grid, step_flashes} = flash(List.to_tuple(grid), Enum.reverse(flash_pos), 0)
+    {grid, step_flashes} = flash(List.to_tuple(grid), flash_pos, 0)
 
     grid =
       Enum.map(grid, fn
